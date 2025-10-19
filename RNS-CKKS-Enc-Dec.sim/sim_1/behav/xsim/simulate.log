@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+✅ All 20 tests passed.
+$finish called at time : 615 ns : File "/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/uniform_dist_tb.v" Line 102
