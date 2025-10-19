@@ -4,7 +4,11 @@ Oct 13 2023
 20:21:30
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.sim/sim_1/behav/xsim/glbl.v,1759379962,verilog,,,,glbl,,uvm,,,,,,
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/LFSR_tb.v,1757916885,verilog,,,,LFSR_tb,,,,,,,,
+/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/gaussian_dist_tb.v,1760881557,verilog,,,,gaussian_dist_tb,,uvm,,,,,,
+/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/ternary_dist_tb.v,1760881149,verilog,,,,ternary_dist_tb,,uvm,,,,,,
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/uniform_dist_tb.v,1760873150,verilog,,,,uniform_dist_tb,,uvm,,,,,,
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/DFF.v,1757917023,verilog,,/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/LFSR.v,,DFF,,,,,,,,
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/LFSR.v,1757917374,verilog,,/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/LFSR_tb.v,,LFSR,,,,,,,,
+/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/gaussian_dist.sv,1760881043,systemVerilog,,,,gaussian_dist,,uvm,,,,,,
+/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/ternary_dist.sv,1760880285,systemVerilog,,,,ternary_dist,,uvm,,,,,,
 /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/uniform_dist.sv,1760851528,systemVerilog,,,,uniform_dist,,uvm,,,,,,
