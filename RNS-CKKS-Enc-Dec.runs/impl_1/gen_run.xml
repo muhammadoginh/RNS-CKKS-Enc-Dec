@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1761266570">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="unified_sampler_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="unified_sampler_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="unified_sampler.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="unified_sampler.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="unified_sampler.ltx"/>
+  <File Type="RBD_FILE" Name="unified_sampler.rbd"/>
+  <File Type="NPI_FILE" Name="unified_sampler.npi"/>
+  <File Type="RNPI_FILE" Name="unified_sampler.rnpi"/>
+  <File Type="CFI_FILE" Name="unified_sampler.cfi"/>
+  <File Type="RCFI_FILE" Name="unified_sampler.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="unified_sampler_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="unified_sampler_boot.pdi"/>
+  <File Type="RDI-RDI" Name="unified_sampler.vdi"/>
+  <File Type="PDI-FILE" Name="unified_sampler.pdi"/>
+  <File Type="BITSTR-MMI" Name="unified_sampler.mmi"/>
+  <File Type="BITSTR-BMM" Name="unified_sampler_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="unified_sampler.nky"/>
+  <File Type="BITSTR-RBT" Name="unified_sampler.rbt"/>
+  <File Type="BITSTR-MSK" Name="unified_sampler.msk"/>
+  <File Type="BG-BIN" Name="unified_sampler.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="unified_sampler.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ternary_dist_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ternary_dist_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ternary_dist_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ternary_dist_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ternary_dist_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ternary_dist_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="unified_sampler_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="unified_sampler_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="unified_sampler.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="unified_sampler_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="unified_sampler_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="unified_sampler_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="unified_sampler_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="unified_sampler_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="unified_sampler_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="unified_sampler_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="unified_sampler_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="unified_sampler_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="unified_sampler_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="unified_sampler_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="unified_sampler_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="unified_sampler_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="unified_sampler_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="unified_sampler_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="unified_sampler_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="unified_sampler_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="unified_sampler_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="unified_sampler_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="unified_sampler_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="unified_sampler_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="unified_sampler_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="unified_sampler_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="unified_sampler_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="unified_sampler_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="unified_sampler_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="unified_sampler_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="unified_sampler_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="unified_sampler_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="unified_sampler_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="unified_sampler_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="unified_sampler_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="unified_sampler_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="unified_sampler_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="unified_sampler_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="unified_sampler_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="unified_sampler_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="unified_sampler_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="unified_sampler_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="unified_sampler_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="unified_sampler_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="unified_sampler_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="unified_sampler.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="unified_sampler_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="unified_sampler_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="unified_sampler_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="unified_sampler_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="unified_sampler_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="unified_sampler_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="unified_sampler.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/delay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dsp_mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/unified_sampler.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gaussian_dist.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/barrett_red.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ternary_dist.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uniform_dist.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DFF.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LFSR.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ternary_dist_with_mod.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gaussian_dist_with_search.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="unified_sampler"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/uniform_dist.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

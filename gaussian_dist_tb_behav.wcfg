@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="gaussian_dist_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="gaussian_dist_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="384.500 ns"></ZoomStartTime>
+      <ZoomEndTime time="559.101 ns"></ZoomEndTime>
+      <Cursor1Time time="530.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="logic" fp_name="/gaussian_dist_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gaussian_dist_tb/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gaussian_dist_tb/prng_input">
+      <obj_property name="ElementShortName">prng_input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prng_input[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gaussian_dist_tb/sample">
+      <obj_property name="ElementShortName">sample[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gaussian_dist_tb/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>

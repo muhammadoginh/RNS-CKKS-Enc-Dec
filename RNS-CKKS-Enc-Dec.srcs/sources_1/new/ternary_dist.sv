@@ -12,11 +12,9 @@
 // Description: 
 // 
 // Ternary sampler: outputs -1, 0, or +1 based on programmable thresholds
-// Input: random bits (at least 2 bits needed)
-// Probabilities:
-//   P(-1) = THRESHOLD1 / 2^RND_WIDTH
-//   P(0)  = (THRESHOLD2 - THRESHOLD1) / 2^RND_WIDTH
-//   P(+1) = (2^RND_WIDTH - THRESHOLD2) / 2^RND_WIDTH
+// Ternary Distribution: maps 32-bit PRNG output to {-1, 0, +1}
+// Formula: sample = -1 + (prng_input % 3)
+// Ultra-fast: no loops, no rejection, fully combinational
 //
 // Dependencies: 
 // 
@@ -28,41 +26,81 @@
 
 
 module ternary_dist #(
-    parameter integer WIDTH        = 16,      // Output width (for -1 in two's complement)
-    parameter integer RND_WIDTH   = 32,      // Width of random input (≥2)
-    parameter integer THRESHOLD1  = 32'd858993459, // = 0.25 * 2^32  → P(-1) = 25%
-    parameter integer THRESHOLD2  = 32'd2576980377  // = 0.75 * 2^32  → P(0) = 50%, P(+1)=25%
-)(
-    input  wire                     clk,
-    input  wire                     rstn,
-    input  wire                     valid_in,
-    input  wire [RND_WIDTH-1:0]     rnd_in,      // Random bits (uniform)
-    output reg                      valid_out,
-    output reg  [WIDTH-1:0]         sample_out   // Signed: -1, 0, or +1
-);
+        parameter BW  = 32
+    )(
+        input                   clk,
+        input                   rstn,
+        input  [31:0]           prng_input,   // Raw 32-bit PRNG output (e.g., from MT19937)
+        output reg signed [1:0] sample  // Ternary value: -1 (2'b11), 0 (2'b00), +1 (2'b01)
+    );
 
-    // Internal: interpret rnd_in as unsigned integer in [0, 2^RND_WIDTH)
-    wire [RND_WIDTH-1:0] rand_val = rnd_in;
+    reg [31:0] prng_reg;
 
-    // Decision logic (combinational)
-    always @(*) begin
-        if (rand_val < THRESHOLD1) begin
-            // -1 in two's complement
-            sample_out = {WIDTH{1'b1}}; // e.g., 16'hFFFF for WIDTH=16
-        end else if (rand_val < THRESHOLD2) begin
-            sample_out = {WIDTH{1'b0}}; // 0
+    wire [15:0] even_bits;
+    wire [15:0] odd_bits;
+    
+    reg [4:0] even_sum;  // max = 16 --> 5 bits
+    reg [4:0] odd_sum;   // max = 16 --> 5 bits
+    
+    reg [4:0] pos_diff;
+    
+    always @(posedge clk) begin
+        if(~rstn) begin
+            prng_reg <= 0;
         end else begin
-            sample_out = {{WIDTH-1{1'b0}}, 1'b1}; // +1
+            prng_reg <= prng_input;
         end
     end
-
-    // Register valid_out (1-cycle latency, aligned with sample_out)
-    always @(posedge clk or negedge rstn) begin
-        if (!rstn) begin
-            valid_out <= 1'b0;
-        end else begin
-            valid_out <= valid_in;
+    
+    // Extract even and odd bits
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin : extract_bits
+            assign even_bits[i] = prng_reg[2*i];
+            assign odd_bits[i]  = prng_reg[2*i + 1];
         end
+    endgenerate
+    
+    // Combine partial sums (simple linear adder tree)
+    always @(*) begin
+        integer j;
+        even_sum = 0;
+        odd_sum  = 0;
+        for (j = 0; j < 16; j = j + 1) begin
+            even_sum = even_sum + even_bits[j];
+            odd_sum  = odd_sum  + odd_bits[j];
+        end
+        
+        if (even_sum > odd_sum) begin
+            pos_diff = even_sum - odd_sum;
+        end else begin
+            pos_diff = 18 - odd_sum + even_sum;
+        end
+    end
+    
+
+//    // Efficient modulo-3 for 32-bit input (optimized for synthesis)
+//    wire [1:0] mod3;
+//    assign mod3 = pos_diff % 3'd3;
+    
+    // Since pos_diff <= 17 (6 bits), use direct mapping
+    reg [1:0] mod3;
+    always @(*) begin
+        case (pos_diff)
+            0,3,6,9,12,15: mod3 = 2'd0;
+            1,4,7,10,13,16: mod3 = 2'd1;
+            2,5,8,11,14,17: mod3 = 2'd2;
+            default: mod3 = 2'd0; // Prevent latch
+        endcase
+    end
+    
+    // Map {0,1,2} -> {-1,0,1}
+    always @(posedge clk) begin
+        case (mod3)
+            2'd0: sample <= -1;  // 2'b11 in 2's complement
+            2'd1: sample <=  0;  // 2'b00
+            2'd2: sample <=  1;  // 2'b01
+        endcase
     end
 
 endmodule

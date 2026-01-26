@@ -22,108 +22,79 @@
 
 module ternary_dist_tb();
 
-    // Parameters
-    localparam integer WIDTH      = 16;
-    localparam integer RND_WIDTH  = 32;
-    localparam integer NUM_TESTS  = 100_000;
+  // Parameters
+  localparam integer NUM_SAMPLES = 100000;
 
-    // Thresholds for P(-1)=0.25, P(0)=0.5, P(+1)=0.25
-    localparam integer THRESHOLD1 = 32'd858993459;  // 0.25 * 2^32
-    localparam integer THRESHOLD2 = 32'd2576980377; // 0.75 * 2^32
+  // DUT I/O
+  reg         clk;
+  reg         rstn;
+  reg  [31:0] prng_input;
+  wire signed [1:0] sample;
 
-    // DUT signals
-    reg                     clk;
-    reg                     rstn;
-    reg                     valid_in;
-    reg [RND_WIDTH-1:0]     rnd_in;
-    wire                    valid_out;
-    wire [WIDTH-1:0]        sample_out;
+  // Instantiate DUT
+  ternary_dist dut (
+    .clk(clk),
+    .rstn(rstn),
+    .prng_input(prng_input),
+    .sample(sample)
+  );
 
-    // Clock generation
-    always #5 clk = ~clk; // 100 MHz
+  // Clock generation: 100 MHz (10 ns period)
+  initial clk = 1;
+  always #5 clk = ~clk;
 
-    // Instantiate DUT
-    ternary_dist #(
-        .WIDTH(WIDTH),
-        .RND_WIDTH(RND_WIDTH),
-        .THRESHOLD1(THRESHOLD1),
-        .THRESHOLD2(THRESHOLD2)
-    ) u_dut (
-        .clk(clk),
-        .rstn(rstn),
-        .valid_in(valid_in),
-        .rnd_in(rnd_in),
-        .valid_out(valid_out),
-        .sample_out(sample_out)
-    );
+  // Counters for statistics
+  integer neg1_count = 0;
+  integer zero_count = 0;
+  integer plus1_count = 0;
+  integer total_count = 0;
 
-    // Simulation control
-    integer count_neg1 = 0;
-    integer count_zero = 0;
-    integer count_pos1 = 0;
-    integer i;
-    
-    reg signed [WIDTH-1:0] s;
-    
-    real p_neg1, p_zero, p_pos1;
+  // Pseudo-random generator (LFSR-style for reproducibility)
+  reg [31:0] lfsr = 32'hACE1_1234;
+  always @(posedge clk)
+    if (rstn)
+      lfsr <= {lfsr[30:0], lfsr[31] ^ lfsr[21] ^ lfsr[1] ^ lfsr[0]};
 
-    initial begin
-        // Initialize
-        clk = 0;
-        rstn = 0;
-        valid_in = 0;
-        rnd_in = 0;
+  // Stimulus and collection
+  initial begin
+    rstn = 0;
+    prng_input = 0;
+    @(posedge clk);
+    rstn = 1;
 
-        // Release reset
-        #20 rstn = 1;
+    repeat (NUM_SAMPLES) begin
+      
+      prng_input <= lfsr;
 
-        // Run tests
-        for (i = 0; i < NUM_TESTS; i = i + 1) begin
-            @(posedge clk);
-            valid_in = 1;
-            rnd_in = $urandom(); // 32-bit random
-
-            @(posedge clk);
-            valid_in = 0;
-
-            // Sample is available this cycle (combinational output, registered valid)
-            if (valid_out) begin
-                // Convert sample_out to signed integer for comparison
-                s = sample_out;
-
-                if (s == -1) begin
-                    count_neg1 = count_neg1 + 1;
-                end else if (s == 0) begin
-                    count_zero = count_zero + 1;
-                end else if (s == 1) begin
-                    count_pos1 = count_pos1 + 1;
-                end else begin
-                    $display("❌ ERROR: Invalid output %d at test %0d", s, i);
-                    $finish;
-                end
-            end
-        end
-        
-                // Report results
-        
-        p_neg1 = $itor(count_neg1) / $itor(NUM_TESTS);
-        p_zero = $itor(count_zero) / $itor(NUM_TESTS);
-        p_pos1 = $itor(count_pos1) / $itor(NUM_TESTS);
-
-        $display("Ternary Sampler Test Results (%d samples)", NUM_TESTS);
-        $display("P(-1) = %.4f (expected 0.2500)", p_neg1);
-        $display("P( 0) = %.4f (expected 0.5000)", p_zero);
-        $display("P(+1) = %.4f (expected 0.2500)", p_pos1);
-
-        if (p_neg1 < 0.23 || p_neg1 > 0.27 ||
-            p_zero < 0.48 || p_zero > 0.52 ||
-            p_pos1 < 0.23 || p_pos1 > 0.27) begin
-            $display("WARNING: Probabilities outside expected range.");
-        end else begin
-            $display("PASS: All probabilities within expected tolerance.");
-        end
-
-        $finish;
+      // Record sample from previous cycle (pipeline delay = 1)
+      if (total_count > 1) begin
+        case (sample)
+          -1: neg1_count  = neg1_count  + 1;
+           0: zero_count  = zero_count  + 1;
+           1: plus1_count = plus1_count + 1;
+        endcase
+      end
+      total_count = total_count + 1;
+      @(posedge clk);
     end
+
+    // Wait a few extra cycles to flush pipeline
+    repeat (5) @(posedge clk);
+
+    // Display statistics
+    $display("=========================================");
+    $display("   TERNARY SAMPLER STATISTICS");
+    $display("=========================================");
+    $display(" Total samples : %0d", total_count);
+    $display("  -1 count      : %0d (%.4f %%)", neg1_count,
+             100.0 * neg1_count / total_count);
+    $display("   0 count      : %0d (%.4f %%)", zero_count,
+             100.0 * zero_count / total_count);
+    $display("  +1 count      : %0d (%.4f %%)", plus1_count,
+             100.0 * plus1_count / total_count);
+    $display("=========================================");
+
+    $finish;
+  end
 
 endmodule

@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Starting Gaussian Dist Testbench
+Testing random values across full range...
+Random value tests PASSED!
+All tests PASSED!
+$finish called at time : 655390 ns : File "/home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/gaussian_dist_tb.v" Line 111

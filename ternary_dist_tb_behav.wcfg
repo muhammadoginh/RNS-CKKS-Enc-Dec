@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ternary_dist_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ternary_dist_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="126.601 ns"></ZoomEndTime>
+      <Cursor1Time time="78.800 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/ternary_dist_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ternary_dist_tb/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/prng_input">
+      <obj_property name="ElementShortName">prng_input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prng_input[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/dut/mod3">
+      <obj_property name="ElementShortName">mod3[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mod3[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/sample">
+      <obj_property name="ElementShortName">sample[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sample[1:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/neg1_count">
+      <obj_property name="ElementShortName">neg1_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">neg1_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/zero_count">
+      <obj_property name="ElementShortName">zero_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zero_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/plus1_count">
+      <obj_property name="ElementShortName">plus1_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">plus1_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/total_count">
+      <obj_property name="ElementShortName">total_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/lfsr">
+      <obj_property name="ElementShortName">lfsr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">lfsr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ternary_dist_tb/NUM_SAMPLES">
+      <obj_property name="ElementShortName">NUM_SAMPLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_SAMPLES[31:0]</obj_property>
+   </wvobject>
+</wave_config>

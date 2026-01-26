@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="barrett_red_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="barrett_red_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="63.301 ns"></ZoomEndTime>
+      <Cursor1Time time="27.200 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="array" fp_name="/barrett_red_tb/qp_array">
+      <obj_property name="ElementShortName">qp_array[0:8][47:0]</obj_property>
+      <obj_property name="ObjectShortName">qp_array[0:8][47:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/barrett_red_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/barrett_red_tb/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/PRNG_IN">
+      <obj_property name="ElementShortName">PRNG_IN[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PRNG_IN[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/q">
+      <obj_property name="ElementShortName">q[47:0]</obj_property>
+      <obj_property name="ObjectShortName">q[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/M">
+      <obj_property name="ElementShortName">M[47:0]</obj_property>
+      <obj_property name="ObjectShortName">M[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/expected_result">
+      <obj_property name="ElementShortName">expected_result[47:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_result[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/all_tests_passed">
+      <obj_property name="ElementShortName">all_tests_passed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">all_tests_passed[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/BW_IN">
+      <obj_property name="ElementShortName">BW_IN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BW_IN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/BW_OUT">
+      <obj_property name="ElementShortName">BW_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BW_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/NUM_TESTS_PER_Q">
+      <obj_property name="ElementShortName">NUM_TESTS_PER_Q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_TESTS_PER_Q[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/NUM_QS">
+      <obj_property name="ElementShortName">NUM_QS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_QS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/uut/q_REG">
+      <obj_property name="ElementShortName">q_REG[47:0]</obj_property>
+      <obj_property name="ObjectShortName">q_REG[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/barrett_red_tb/uut/q_REG_D">
+      <obj_property name="ElementShortName">q_REG_D[47:0]</obj_property>
+      <obj_property name="ObjectShortName">q_REG_D[47:0]</obj_property>
+   </wvobject>
+</wave_config>
