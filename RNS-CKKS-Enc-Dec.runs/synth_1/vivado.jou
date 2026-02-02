@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# Vivado v2023.2_AR000036317 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Oct 24 09:42:53 2025
-# Process ID: 2161587
-# Current directory: /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1
-# Command line: vivado -log unified_sampler.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source unified_sampler.tcl
-# Log file: /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1/unified_sampler.vds
-# Journal file: /home/moginh/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1/vivado.jou
-# Running On: dis-lab-SYS-7049GP-TRT, OS: Linux, CPU Frequency: 3200.046 MHz, CPU Physical cores: 16, Host memory: 134797 MB
+# Start of session at: Sun Feb  1 23:04:48 2026
+# Process ID: 5580
+# Current directory: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1
+# Command line: vivado.exe -log gaussian_dist.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gaussian_dist.tcl
+# Log file: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1/gaussian_dist.vds
+# Journal file: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/synth_1\vivado.jou
+# Running On: DESKTOP-U41830S, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68301 MB
 #-----------------------------------------------------------
-source unified_sampler.tcl -notrace
+source gaussian_dist.tcl -notrace

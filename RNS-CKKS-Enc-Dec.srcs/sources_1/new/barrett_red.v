@@ -37,6 +37,7 @@ module barrett_red #(
     wire [BW_OUT-1:0] q_REG_D;
     
     wire [BW_OUT-1:0] result;
+    wire [BW_OUT-1:0] result2;
     
     wire [BW_IN-BW_OUT:0] r;
     
@@ -89,15 +90,14 @@ module barrett_red #(
     );
     
     assign result = PRNG_REG_D - (z1 << 24) - z0;
+    assign result2 = (result > q_REG_D) ? result - q_REG_D : result;
+    
     
     always @(posedge clk) begin
         if (~rstn) begin
             M <= 0;
         end else begin 
-            M <= result;
-            if (result > q_REG_D) begin
-                M <= result - q_REG_D;
-            end
+            M <= result2;
         end
     end
 

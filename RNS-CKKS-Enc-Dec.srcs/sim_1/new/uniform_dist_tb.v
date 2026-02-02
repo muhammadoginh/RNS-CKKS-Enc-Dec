@@ -90,10 +90,10 @@ module uniform_dist_tb();
             @(posedge clk);
             if (valid_out) begin
                 if (sample_out >= modulus_q) begin
-                    $display("❌ ERROR: sample_out = %d >= modulus_q = %d", sample_out, modulus_q);
+                    $display("ERROR: sample_out = %d >= modulus_q = %d", sample_out, modulus_q);
                     $finish;
                 end else begin
-                    $display("✅ Sample %02d: %d (mod %d)", i+1, sample_out, modulus_q);
+                    $display("Sample %02d: %d (mod %d)", i+1, sample_out, modulus_q);
                 end
             end
         end

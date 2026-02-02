@@ -29,7 +29,7 @@ module gaussian_dist_tb();
     reg                       clk;
     reg                       rstn;
     reg               [31:0]  prng_input;
-    wire  signed      [4:0]   sample;
+    wire  signed      [5:0]   sample;
     
     // DUT Instance
     gaussian_dist uut (
@@ -113,8 +113,8 @@ module gaussian_dist_tb();
     
     // Task to test a specific boundary condition
     task test_boundary;
-        input [9:0] test_mod;
-        input signed [4:0] expected;
+        input [10:0] test_mod;
+        input signed [5:0] expected;
         begin
             // Set PRNG input to give specific mod997 value
             prng_input = test_mod; // Since test_mod < 997, mod997 = test_mod
@@ -135,12 +135,12 @@ module gaussian_dist_tb();
         integer test_val;
         begin
             for (i = 0; i < 65536; i = i + 1) begin
-                test_val = $urandom_range(0, 996);
+                test_val = $urandom_range(0, 2040);
                 prng_input = test_val;
                 #10;
                 
                 // Verify output is in valid range
-                if (sample < -10 || sample > 10) begin
+                if (sample < -31 || sample > 31) begin
                     $display("ERROR: sample=%0d out of range [-10,10] for mod997=%0d", sample, test_val);
                     $finish;
                 end
