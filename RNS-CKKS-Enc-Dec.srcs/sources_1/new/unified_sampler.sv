@@ -36,7 +36,7 @@ module unified_sampler #(
         output reg signed [BW_OUT:0]    sample
     );
     
-    localparam [BW_OUT-1:0] q = 48'd281_474_976_710_597;
+    localparam [BW_OUT-1:0] q = 48'd140736414621701;
 
     // =============== SHARED PRNG REGISTRATION ===============
     // Single PRNG register used by all modes
@@ -105,7 +105,7 @@ module unified_sampler #(
     end
     
     // Gaussian mode: Range comparisons with shared comparators
-    wire signed [4:0] gaussian_out;
+    wire signed [5:0] gaussian_out;
     begin : gaussian_logic
         localparam TOTAL_WEIGHT = 10'd997;
         wire [9:0] lower_10 = prng_reg[9:0];

@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Feb  2 12:22:57 2026
-# Process ID: 29644
+# Start of session at: Mon Feb  2 13:16:16 2026
+# Process ID: 9972
 # Current directory: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/impl_1
-# Command line: vivado.exe -log barrett_red.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source barrett_red.tcl -notrace
-# Log file: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/impl_1/barrett_red.vdi
+# Command line: vivado.exe -log unified.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source unified.tcl -notrace
+# Log file: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/impl_1/unified.vdi
 # Journal file: F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.runs/impl_1\vivado.jou
 # Running On: DESKTOP-U41830S, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 68301 MB
 #-----------------------------------------------------------
-source barrett_red.tcl -notrace
+source unified.tcl -notrace

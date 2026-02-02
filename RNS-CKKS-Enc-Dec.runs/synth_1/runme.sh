@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log barrett_red.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source barrett_red.tcl
+EAStep vivado -log unified.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source unified.tcl
