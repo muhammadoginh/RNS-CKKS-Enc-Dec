@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1769954684">
-  <File Type="ROUTE-PWR" Name="gaussian_dist_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="gaussian_dist.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="gaussian_dist_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="gaussian_dist_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="gaussian_dist_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="gaussian_dist.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="gaussian_dist_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="gaussian_dist_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="gaussian_dist_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="gaussian_dist_opt.dcp"/>
-  <File Type="OPT-DRC" Name="gaussian_dist_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="gaussian_dist.hwdef"/>
-  <File Type="PWROPT-DCP" Name="gaussian_dist_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="gaussian_dist_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="gaussian_dist_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="gaussian_dist_placed.dcp"/>
-  <File Type="PLACE-IO" Name="gaussian_dist_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="gaussian_dist_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="gaussian_dist_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="gaussian_dist_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="gaussian_dist_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="gaussian_dist_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="gaussian_dist_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="gaussian_dist.bin"/>
-  <File Type="PLACE-TIMING" Name="gaussian_dist_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="gaussian_dist_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="gaussian_dist_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="gaussian_dist_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="gaussian_dist.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="gaussian_dist_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="gaussian_dist_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="gaussian_dist_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="gaussian_dist.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="gaussian_dist_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="gaussian_dist_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="gaussian_dist_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="gaussian_dist_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="gaussian_dist_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="gaussian_dist_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="gaussian_dist_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="gaussian_dist_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="gaussian_dist_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="gaussian_dist_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="gaussian_dist_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="gaussian_dist_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="gaussian_dist_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="gaussian_dist_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="gaussian_dist_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="gaussian_dist_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="gaussian_dist_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="gaussian_dist_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="gaussian_dist_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="gaussian_dist_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="gaussian_dist_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="gaussian_dist_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="gaussian_dist_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="unified_sampler_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="unified_sampler_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="unified_sampler_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="unified_sampler_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="gaussian_dist.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="unified_sampler_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="unified_sampler_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="gaussian_dist.nky"/>
-  <File Type="BITSTR-BMM" Name="gaussian_dist_bd.bmm"/>
-  <File Type="PDI-FILE" Name="gaussian_dist.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="gaussian_dist_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="gaussian_dist_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="gaussian_dist.rcfi"/>
-  <File Type="CFI_FILE" Name="gaussian_dist.cfi"/>
-  <File Type="RNPI_FILE" Name="gaussian_dist.rnpi"/>
-  <File Type="NPI_FILE" Name="gaussian_dist.npi"/>
-  <File Type="RBD_FILE" Name="gaussian_dist.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1770002512">
+  <File Type="ROUTE-PWR" Name="barrett_red_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="barrett_red.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="barrett_red_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="barrett_red_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="barrett_red_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="barrett_red.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="barrett_red_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="barrett_red_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="barrett_red_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="barrett_red_opt.dcp"/>
+  <File Type="OPT-DRC" Name="barrett_red_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="barrett_red.hwdef"/>
+  <File Type="PWROPT-DCP" Name="barrett_red_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="barrett_red_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="barrett_red_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="barrett_red_placed.dcp"/>
+  <File Type="PLACE-IO" Name="barrett_red_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="barrett_red_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="barrett_red_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="barrett_red_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="barrett_red_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="barrett_red_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="barrett_red_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="barrett_red.bin"/>
+  <File Type="PLACE-TIMING" Name="barrett_red_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="barrett_red_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="barrett_red_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="barrett_red_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="barrett_red.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="barrett_red_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="barrett_red_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="barrett_red_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="barrett_red.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="barrett_red_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="barrett_red_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="barrett_red_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="barrett_red_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="barrett_red_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="barrett_red_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="barrett_red_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="barrett_red_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="barrett_red_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="barrett_red_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="barrett_red_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="barrett_red_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="barrett_red_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="barrett_red_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="barrett_red_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="barrett_red_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="barrett_red_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="barrett_red_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="barrett_red_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="barrett_red_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="barrett_red_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="barrett_red_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="barrett_red_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="gaussian_dist_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="gaussian_dist_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="gaussian_dist_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="gaussian_dist_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="barrett_red.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="gaussian_dist_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="gaussian_dist_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="barrett_red.nky"/>
+  <File Type="BITSTR-BMM" Name="barrett_red_bd.bmm"/>
+  <File Type="PDI-FILE" Name="barrett_red.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="barrett_red_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="barrett_red_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="barrett_red.rcfi"/>
+  <File Type="CFI_FILE" Name="barrett_red.cfi"/>
+  <File Type="RNPI_FILE" Name="barrett_red.rnpi"/>
+  <File Type="NPI_FILE" Name="barrett_red.npi"/>
+  <File Type="RBD_FILE" Name="barrett_red.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="gaussian_dist.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="gaussian_dist.sysdef"/>
-  <File Type="BG-BGN" Name="gaussian_dist.bgn"/>
-  <File Type="BG-DRC" Name="gaussian_dist.drc"/>
-  <File Type="RDI-RDI" Name="gaussian_dist.vdi"/>
+  <File Type="BITSTR-LTX" Name="barrett_red.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="barrett_red.sysdef"/>
+  <File Type="BG-BGN" Name="barrett_red.bgn"/>
+  <File Type="BG-DRC" Name="barrett_red.drc"/>
+  <File Type="RDI-RDI" Name="barrett_red.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="gaussian_dist_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="gaussian_dist_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="barrett_red_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="barrett_red_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
@@ -93,8 +93,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/dsp_mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/barrett_red.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ternary_dist.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/gaussian_dist.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -108,31 +131,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/dsp_mul.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/unified_sampler.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/barrett_red.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ternary_dist.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -174,7 +173,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="gaussian_dist"/>
+      <Option Name="TopModule" Val="barrett_red"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

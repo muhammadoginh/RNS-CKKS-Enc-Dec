@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RNS-CKKS-Enc-Dec.srcs/sources_1/new/barrett_red.v" \
+"../../../../RNS-CKKS-Enc-Dec.srcs/sources_1/new/delay.v" \
+"../../../../RNS-CKKS-Enc-Dec.srcs/sources_1/new/dsp_mul.v" \
+
+sv xil_defaultlib  \
+"../../../../RNS-CKKS-Enc-Dec.srcs/sim_1/new/barrett_red_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

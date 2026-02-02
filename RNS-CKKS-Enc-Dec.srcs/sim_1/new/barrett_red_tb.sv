@@ -72,7 +72,6 @@ module barrett_red_tb();
         .clk(clk),
         .rstn(rstn),
         .PRNG_IN(PRNG_IN),
-        .q(q),
         .M(M)
     );
 
@@ -83,13 +82,13 @@ module barrett_red_tb();
 
     initial begin
         // Initialize signals
-        clk = 1;
+        clk = 0;
         rstn = 0;
         PRNG_IN = 0;
         q = 0;
 
         // Release reset after a few cycles
-        #10;
+        #5;
         rstn = 1;
 //        #10; // Wait for reset release propagation
 
@@ -101,10 +100,11 @@ module barrett_red_tb();
 
         // --- Run Tests for each q in qp_array ---
         for (integer i = 0; i < NUM_QS; i = i + 1) begin
-            q = qp_array[i];
+            
             @(posedge clk);
             $display("Testing q[%0d] = 0x%h (%0d)", i, q, q);
-
+//            q = 48'd281474976710597;
+            q = 48'd140736414621701;
             // Generate a random 64-bit number for PRNG_IN
             // Verilog's $random returns a 32-bit signed value.
             // To get 64 bits, we combine two calls or use $urandom (32-bit unsigned).
@@ -126,7 +126,6 @@ module barrett_red_tb();
 
             // Wait for one clock cycle for the DUT to process (accounting for internal delays)
             // The DUT has a delay of 1 clk cycle due to PRNG_REG_D and the final assignment to M
-            @(posedge clk);
 
             // Check result against expected (using standard %)
             if (M === expected_result) begin

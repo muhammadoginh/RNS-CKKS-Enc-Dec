@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log gaussian_dist.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gaussian_dist.tcl
+EAStep vivado -log barrett_red.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source barrett_red.tcl

@@ -43,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log gaussian_dist.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gaussian_dist.tcl -notrace
+EAStep vivado -log barrett_red.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source barrett_red.tcl -notrace
 
 

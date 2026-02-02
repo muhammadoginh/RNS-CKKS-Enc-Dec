@@ -3,6 +3,9 @@
 Oct 13 2023
 20:47:58
 F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.sim/sim_1/behav/xsim/glbl.v,1769405396,verilog,,,,glbl,,uvm,,,,,,
+F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/barrett_red_tb.sv,1770001087,systemVerilog,,,,barrett_red_tb,,uvm,,,,,,
 F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/gaussian_dist_tb.v,1769996442,verilog,,,,gaussian_dist_tb,,uvm,,,,,,
-F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/delay.v,1769405396,verilog,,,,delay,,uvm,,,,,,
+F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/barrett_red.v,1770002274,verilog,,F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/delay.v,,barrett_red,,uvm,,,,,,
+F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/delay.v,1769405396,verilog,,F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/dsp_mul.v,,delay,,uvm,,,,,,
+F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/dsp_mul.v,1769998288,verilog,,,,dsp_mul,,uvm,,,,,,
 F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/gaussian_dist.sv,1769996983,systemVerilog,,,,gaussian_dist,,uvm,,,,,,

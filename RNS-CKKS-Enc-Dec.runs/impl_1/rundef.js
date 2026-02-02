@@ -26,7 +26,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log gaussian_dist.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source gaussian_dist.tcl -notrace" );
+         "-log barrett_red.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source barrett_red.tcl -notrace" );
 
 
 

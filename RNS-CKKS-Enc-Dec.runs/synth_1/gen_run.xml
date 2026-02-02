@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1769954684" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/uniform_dist.dcp">
-  <File Type="PA-TCL" Name="gaussian_dist.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="gaussian_dist_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="gaussian_dist_reports.tcl"/>
-  <File Type="RDS-RDS" Name="gaussian_dist.vds"/>
-  <File Type="RDS-UTIL" Name="gaussian_dist_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="gaussian_dist_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="gaussian_dist.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="gaussian_dist_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="gaussian_dist_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-e" LaunchTime="1770002512" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/uniform_dist.dcp">
+  <File Type="PA-TCL" Name="barrett_red.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="barrett_red_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="barrett_red_reports.tcl"/>
+  <File Type="RDS-RDS" Name="barrett_red.vds"/>
+  <File Type="RDS-UTIL" Name="barrett_red_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="barrett_red_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="barrett_red.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="barrett_red_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="barrett_red_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/delay.v">
@@ -18,8 +18,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/dsp_mul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/barrett_red.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ternary_dist.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/gaussian_dist.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -33,31 +56,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/dsp_mul.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/unified_sampler.sv">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/barrett_red.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ternary_dist.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -99,7 +98,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="gaussian_dist"/>
+      <Option Name="TopModule" Val="barrett_red"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

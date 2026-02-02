@@ -1,15 +1,20 @@
 Vivado Simulator v2023.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot gaussian_dist_tb_behav xil_defaultlib.gaussian_dist_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot barrett_red_tb_behav xil_defaultlib.barrett_red_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 16 for port 'in2' [F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/barrett_red.v:69]
+WARNING: [VRFC 10-3091] actual bit length 17 differs from formal bit length 16 for port 'in2' [F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sources_1/new/barrett_red.v:76]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.gaussian_dist
-Compiling module xil_defaultlib.gaussian_dist_tb
+Compiling module xil_defaultlib.delay(N=2,BW=64)
+Compiling module xil_defaultlib.delay
+Compiling module xil_defaultlib.dsp_mul(A_WIDTH=24,B_WIDTH=16)
+Compiling module xil_defaultlib.barrett_red
+Compiling module xil_defaultlib.barrett_red_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot gaussian_dist_tb_behav
+Built simulation snapshot barrett_red_tb_behav

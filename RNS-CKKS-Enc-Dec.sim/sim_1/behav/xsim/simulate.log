@@ -1,3 +1,41 @@
 Time resolution is 1 ps
-Starting Gaussian Dist Testbench
-Testing random values across full range...
+Starting testbench for barrett_red with specific 'qp' values.
+Testing           9 moduli,         100 random inputs each.
+--------------------------------------------------------------
+Testing q[0] = 0x000000000000 (0)
+  Completed testing for q[0] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[1] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x7735b2c9625e3102, q=0x7fffc0002005, DUT Output=0x000000000000, Expected=0x0779e9ffd20e
+  Completed testing for q[1] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[2] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x2707f9737d469a06, q=0x7fffc0002005, DUT Output=0x000000000000, Expected=0x6e64048c28eb
+  Completed testing for q[2] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[3] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x03caa00a282389f0, q=0x7fffc0002005, DUT Output=0x0779e9ffd20e, Expected=0x0cf7738313b6
+  Completed testing for q[3] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[4] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x8a81baf39906c7ee, q=0x7fffc0002005, DUT Output=0x6e64048c28eb, Expected=0x21ef6730c407
+  Completed testing for q[4] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[5] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x164d61f47b0052d4, q=0x7fffc0002005, DUT Output=0x0cf7738313b6, Expected=0x00347660deda
+  Completed testing for q[5] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[6] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x2323dcc43189b466, q=0x7fffc0002005, DUT Output=0x21ef6730c407, Expected=0x6d1af56c33d2
+  Completed testing for q[6] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[7] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x4a907c549a1801ff, q=0x7fffc0002005, DUT Output=0x40345665fedf, Expected=0x6e55e8bf7503
+  Completed testing for q[7] = 0x7fffc0002005
+--------------------------------------------------------------
+Testing q[8] = 0x7fffc0002005 (140736414621701)
+  Test : FAIL - PRNG_IN=0x951854d32da597b7, q=0x7fffc0002005, DUT Output=0x6d1af56c33d2, Expected=0x219cc770f85a
+  Completed testing for q[8] = 0x7fffc0002005
+--------------------------------------------------------------
+OVERALL RESULT: Some tests FAILED for the specific 'qp' values. Check output above.
+$finish called at time : 95 ns : File "F:/Projects/RNS-CKKS-Enc-Dec/RNS-CKKS-Enc-Dec.srcs/sim_1/new/barrett_red_tb.sv" Line 155
